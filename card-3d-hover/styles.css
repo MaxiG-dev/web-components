@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Inconsolata;
 }
 
 /*Card */
@@ -19,6 +20,11 @@ body {
     -moz-transition: box-shadow 0.3s ease-in-out;
     -ms-transition: box-shadow 0.3s ease-in-out;
     -o-transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .card-info {
@@ -81,6 +87,12 @@ svg {
     --size: 25px;
     width: var(--size);
     height: var(--size);
+}
+.icon-link {
+    fill: rgba(0,0,0,0);
+}
+
+.icon-github {
     fill: #252525;
 }
 
@@ -104,8 +116,4 @@ svg {
 
 .card:hover .links li:nth-child(2) {
     transition-delay: 0.1s;
-}
-
-.card:hover .links li:nth-child(3) {
-    transition-delay: 0.2s;
 }
